@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <students>
   <student>
-    <id>001</id>
-    <name>John Doe</name>
-    <nim>123456</nim>
-    <address>Jakarta</address>
+    <id>1</id>
+    <name>Alice</name>
+    <nim>1234567890</nim>
+    <address>123 Main St, Anytown, USA</address>
     <semester>3</semester>
   </student>
   <student>
-    <id>002</id>
-    <name>Jane Smith</name>
-    <nim>789012</nim>
-    <address>Bandung</address>
+    <id>2</id>
+    <name>Bob</name>
+    <nim>0987654321</nim>
+    <address>456 Oak Ave, Somewhere, USA</address>
+    <semester>2</semester>
+  </student>
+  <student>
+    <id>3</id>
+    <name>Charlie</name>
+    <nim>5432167890</nim>
+    <address>789 Elm St, Nowhere, USA</address>
+    <semester>4</semester>
+  </student>
+  <student>
+    <id>4</id>
+    <name>David</name>
+    <nim>0123456789</nim>
+    <address>321 Maple Ave, Anywhere, USA</address>
+    <semester>2</semester>
+  </student>
+  <student>
+    <id>5</id>
+    <name>Eve</name>
+    <nim>9876543210</nim>
+    <address>654 Pine St, Everywhere, USA</address>
     <semester>5</semester>
   </student>
   <student>
-    <id>003</id>
-    <name>Bob Johnson</name>
-    <nim>345678</nim>
-    <address>Surabaya</address>
+    <id>6</id>
+    <name>Frank</name>
+    <nim>2345678901</nim>
+    <address>987 Cedar Ave, Nowhere, USA</address>
+    <semester>3</semester>
+  </student>
+  <student>
+    <id>7</id>
+    <name>Grace</name>
+    <nim>7890123456</nim>
+    <address>456 Birch St, Somewhere, USA</address>
+    <semester>4</semester>
+  </student>
+  <student>
+    <id>8</id>
+    <name>Harry</name>
+    <nim>6543210987</nim>
+    <address>123 Pine St, Anytown, USA</address>
+    <semester>1</semester>
+  </student>
+  <student>
+    <id>9</id>
+    <name>Isaac</name>
+    <nim>8901234567</nim>
+    <address>789 Cedar Ave, Everywhere, USA</address>
+    <semester>5</semester>
+  </student>
+  <student>
+    <id>10</id>
+    <name>Jane</name>
+    <nim>5678901234</nim>
+    <address>321 Birch St, Nowhere, USA</address>
     <semester>2</semester>
   </student>
 </students>
