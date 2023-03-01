@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <id>001</id>
+    <name>John Doe</name>
+    <nim>123456</nim>
+    <address>Jakarta</address>
+    <semester>3</semester>
+  </student>
+  <student>
+    <id>002</id>
+    <name>Jane Smith</name>
+    <nim>789012</nim>
+    <address>Bandung</address>
+    <semester>5</semester>
+  </student>
+  <student>
+    <id>003</id>
+    <name>Bob Johnson</name>
+    <nim>345678</nim>
+    <address>Surabaya</address>
+    <semester>2</semester>
+  </student>
+</students>
