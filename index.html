@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Student Information Table (Tugas)</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $.ajax({
-        type: "GET",
-        url: "students.xml",
-        dataType: "xml",
-        success: function(xml) {
-          var table = $("<table></table>");
-          table.append("<thead><tr><th>ID</th><th>Name</th><th>NIM</th><th>Address</th><th>Semester</th></tr></thead>");
-          var tbody = $("<tbody></tbody>");
-          $(xml).find("student").each(function() {
-            var id = $(this).find("id").text();
-            var name = $(this).find("name").text();
-            var nim = $(this).find("nim").text();
-            var address = $(this).find("address").text();
-            var semester = $(this).find("semester").text();
-            var row = $("<tr></tr>");
-            row.append("<td>" + id + "</td>");
-            row.append("<td>" + name + "</td>");
-            row.append("<td>" + nim + "</td>");
-            row.append("<td>" + address + "</td>");
-            row.append("<td>" + semester + "</td>");
-            tbody.append(row);
-          });
-          table.append(tbody);
-          $("#student-table").append(table);
-        }
+  <head>
+    <title>Student Information Table (Tugas)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          type: "GET",
+          url: "students.xml",
+          dataType: "xml",
+          success: function (xml) {
+            var table = $("<table></table>");
+            table.append(
+              "<thead><tr><th>ID</th><th>Name</th><th>NIM</th><th>Address</th><th>Semester</th></tr></thead>"
+            );
+            var tbody = $("<tbody></tbody>");
+            $(xml)
+              .find("student")
+              .each(function () {
+                var id = $(this).find("id").text();
+                var name = $(this).find("name").text();
+                var nim = $(this).find("nim").text();
+                var address = $(this).find("address").text();
+                var semester = $(this).find("semester").text();
+                var row = $("<tr></tr>");
+                row.append("<td>" + id + "</td>");
+                row.append("<td>" + name + "</td>");
+                row.append("<td>" + nim + "</td>");
+                row.append("<td>" + address + "</td>");
+                row.append("<td>" + semester + "</td>");
+                tbody.append(row);
+              });
+            table.append(tbody);
+            $("#student-table").append(table);
+          },
+        });
       });
-    });
-  </script>
-</head>
-<body>
-  <h1>Student Information Table</h1>
-  <div id="student-table"></div>
-</body>
+    </script>
+  </head>
+  <body>
+    <h1>Student Information Table</h1>
+    <div id="student-table"></div>
+  </body>
 </html>
